@@ -1,0 +1,15 @@
+# ninja log v7
+28	4192	8049662614294815	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	78dcd5cfe9d2697e
+40	4509	8049662614418312	CMakeFiles/lru_cache_test.dir/tests/test_lru_cache.cpp.obj	397e8494e0c1b2d
+53	5229	8049662614538343	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	7f65e5c579b8fd7d
+18	7727	8049662614172427	_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	75795fa6201fb554
+8	19416	8049662614082842	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	ac4b33f386be2193
+19419	20187	8049662808171819	lib/libgtest.a	b5553967fbd8c12f
+20201	20319	8049662816017853	lib/libgtest_main.a	81a4a6ec2c5db2d1
+20188	20399	8049662815877572	lib/libgmock.a	27585be3ce866c4b
+20399	20509	8049662817997310	lib/libgmock_main.a	15a359e8f677ace6
+20319	22054	8049662834420624	lru_cache_test.exe	f594610e501b4d0d
+20319	22054	8049662834420624	lru_cache_test[1]_tests.cmake	f594610e501b4d0d
+20319	22054	8049662834420624	D:/Projects/Custom LRU Cache/build/lru_cache_test[1]_tests.cmake	f594610e501b4d0d
+29	2037	8049667101889939	CMakeFiles/lru_example.dir/examples/main.cpp.obj	afa29657d473521c
+2038	2555	8049667121975737	lru_example.exe	c904e07521d51b29
