@@ -1,5 +1,5 @@
-LRUCacheTest.BasicPutAndGet 2 0.00946
-LRUCacheTest.EvictionLogic 2 0.0084535
-LRUCacheTest.LRUPromotionOnAccess 2 0.007432
-LRUCacheTest.UpdateExistingKey 2 0.007779
+LRUCacheTest.BasicPutAndGet 3 0.005449
+LRUCacheTest.EvictionLogic 3 0.00497767
+LRUCacheTest.LRUPromotionOnAccess 3 0.004667
+LRUCacheTest.UpdateExistingKey 3 0.00460167
 ---

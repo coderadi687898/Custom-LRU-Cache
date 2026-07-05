@@ -1,10 +1,10 @@
-Start testing: Jul 05 20:28 India Standard Time
+Start testing: Jul 05 20:38 India Standard Time
 ----------------------------------------------------------
 1/4 Testing: LRUCacheTest.BasicPutAndGet
 1/4 Test: LRUCacheTest.BasicPutAndGet
 Command: "D:/Projects/Custom LRU Cache/build/lru_cache_test.exe" "--gtest_filter=LRUCacheTest.BasicPutAndGet" "--gtest_also_run_disabled_tests"
 Directory: D:/Projects/Custom LRU Cache/build
-"LRUCacheTest.BasicPutAndGet" start time: Jul 05 20:28 India Standard Time
+"LRUCacheTest.BasicPutAndGet" start time: Jul 05 20:38 India Standard Time
 Output:
 ----------------------------------------------------------
 Running main() from D:/Projects/Custom LRU Cache/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -23,7 +23,7 @@ Note: Google Test filter = LRUCacheTest.BasicPutAndGet
 Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"LRUCacheTest.BasicPutAndGet" end time: Jul 05 20:28 India Standard Time
+"LRUCacheTest.BasicPutAndGet" end time: Jul 05 20:38 India Standard Time
 "LRUCacheTest.BasicPutAndGet" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -31,7 +31,7 @@ Test Passed.
 2/4 Test: LRUCacheTest.EvictionLogic
 Command: "D:/Projects/Custom LRU Cache/build/lru_cache_test.exe" "--gtest_filter=LRUCacheTest.EvictionLogic" "--gtest_also_run_disabled_tests"
 Directory: D:/Projects/Custom LRU Cache/build
-"LRUCacheTest.EvictionLogic" start time: Jul 05 20:28 India Standard Time
+"LRUCacheTest.EvictionLogic" start time: Jul 05 20:38 India Standard Time
 Output:
 ----------------------------------------------------------
 Running main() from D:/Projects/Custom LRU Cache/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -47,10 +47,10 @@ Note: Google Test filter = LRUCacheTest.EvictionLogic
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.02 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"LRUCacheTest.EvictionLogic" end time: Jul 05 20:28 India Standard Time
+"LRUCacheTest.EvictionLogic" end time: Jul 05 20:38 India Standard Time
 "LRUCacheTest.EvictionLogic" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -58,7 +58,7 @@ Test Passed.
 3/4 Test: LRUCacheTest.LRUPromotionOnAccess
 Command: "D:/Projects/Custom LRU Cache/build/lru_cache_test.exe" "--gtest_filter=LRUCacheTest.LRUPromotionOnAccess" "--gtest_also_run_disabled_tests"
 Directory: D:/Projects/Custom LRU Cache/build
-"LRUCacheTest.LRUPromotionOnAccess" start time: Jul 05 20:28 India Standard Time
+"LRUCacheTest.LRUPromotionOnAccess" start time: Jul 05 20:38 India Standard Time
 Output:
 ----------------------------------------------------------
 Running main() from D:/Projects/Custom LRU Cache/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -77,7 +77,7 @@ Note: Google Test filter = LRUCacheTest.LRUPromotionOnAccess
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"LRUCacheTest.LRUPromotionOnAccess" end time: Jul 05 20:28 India Standard Time
+"LRUCacheTest.LRUPromotionOnAccess" end time: Jul 05 20:38 India Standard Time
 "LRUCacheTest.LRUPromotionOnAccess" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -85,7 +85,7 @@ Test Passed.
 4/4 Test: LRUCacheTest.UpdateExistingKey
 Command: "D:/Projects/Custom LRU Cache/build/lru_cache_test.exe" "--gtest_filter=LRUCacheTest.UpdateExistingKey" "--gtest_also_run_disabled_tests"
 Directory: D:/Projects/Custom LRU Cache/build
-"LRUCacheTest.UpdateExistingKey" start time: Jul 05 20:28 India Standard Time
+"LRUCacheTest.UpdateExistingKey" start time: Jul 05 20:38 India Standard Time
 Output:
 ----------------------------------------------------------
 Running main() from D:/Projects/Custom LRU Cache/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -101,11 +101,11 @@ Note: Google Test filter = LRUCacheTest.UpdateExistingKey
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.02 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"LRUCacheTest.UpdateExistingKey" end time: Jul 05 20:28 India Standard Time
+"LRUCacheTest.UpdateExistingKey" end time: Jul 05 20:38 India Standard Time
 "LRUCacheTest.UpdateExistingKey" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Jul 05 20:28 India Standard Time
+End testing: Jul 05 20:38 India Standard Time
