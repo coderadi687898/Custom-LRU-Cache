@@ -79,6 +79,44 @@ build lru_cache_test.exe lru_cache_test[1]_tests.cmake | ${cmake_ninja_workdir}l
   TARGET_PDB = lru_cache_test.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\lru_cache_test.dir
 
+# =============================================================================
+# Object build statements for EXECUTABLE target lru_example
+
+
+#############################################
+# Order-only phony target for lru_example
+
+build cmake_object_order_depends_target_lru_example: phony || .
+
+build CMakeFiles/lru_example.dir/examples/main.cpp.obj: CXX_COMPILER__lru_example_unscanned_Debug D$:/Projects/Custom$ LRU$ Cache/examples/main.cpp || cmake_object_order_depends_target_lru_example
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\lru_example.dir\examples\main.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I"D:/Projects/Custom LRU Cache/include"
+  OBJECT_DIR = CMakeFiles\lru_example.dir
+  OBJECT_FILE_DIR = CMakeFiles\lru_example.dir\examples
+  TARGET_SUPPORT_DIR = CMakeFiles\lru_example.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lru_example
+
+
+#############################################
+# Link the executable lru_example.exe
+
+build lru_example.exe: CXX_EXECUTABLE_LINKER__lru_example_Debug CMakeFiles/lru_example.dir/examples/main.cpp.obj
+  CONFIG = Debug
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\lru_example.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lru_example.exe
+  TARGET_IMPLIB = liblru_example.dll.a
+  TARGET_PDB = lru_example.exe.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles\lru_example.dir
+
 
 #############################################
 # Utility command for test
@@ -571,6 +609,8 @@ build libgtest_main.a: phony lib/libgtest_main.a
 
 build lru_cache_test: phony lru_cache_test.exe
 
+build lru_example: phony lru_example.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -579,7 +619,7 @@ build lru_cache_test: phony lru_cache_test.exe
 #############################################
 # Folder: D:/Projects/Custom LRU Cache/build
 
-build all: phony lru_cache_test.exe _deps/googletest-build/all
+build all: phony lru_cache_test.exe lru_example.exe _deps/googletest-build/all
 
 # =============================================================================
 

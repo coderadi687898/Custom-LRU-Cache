@@ -35,3 +35,7 @@ target_link_libraries(lru_cache_test
 # 5. Register the tests with CTest (CMake's test runner)
 include(GoogleTest)
 gtest_discover_tests(lru_cache_test)
+
+# --- Build the Example ---
+add_executable(lru_example examples/main.cpp)
+target_link_libraries(lru_example PRIVATE lru_cache)

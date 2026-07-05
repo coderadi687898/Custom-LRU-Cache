@@ -56,7 +56,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						4
+						4,
+						5
 					]
 				},
 				{
@@ -139,7 +140,8 @@
 					"name" : "LRUCacheProject",
 					"targetIndexes" : 
 					[
-						4
+						4,
+						5
 					]
 				},
 				{
@@ -225,6 +227,13 @@
 					"id" : "lru_cache_test::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-lru_cache_test-Debug-e3d2f3eb05cf17e97513.json",
 					"name" : "lru_cache_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lru_example::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lru_example-Debug-66a6b2b58fb72e486d1f.json",
+					"name" : "lru_example",
 					"projectIndex" : 0
 				}
 			]
