@@ -1,0 +1,32 @@
+[
+{
+  "directory": "D:/Projects/Custom LRU Cache/build",
+  "command": "C:\\w64devkit\\bin\\ccache-g++.exe -I\"D:/Projects/Custom LRU Cache/include\" -isystem \"D:/Projects/Custom LRU Cache/build/_deps/googletest-src/googletest/include\" -isystem \"D:/Projects/Custom LRU Cache/build/_deps/googletest-src/googletest\" -g -std=gnu++17 -o CMakeFiles\\lru_cache_test.dir\\tests\\test_lru_cache.cpp.obj -c \"D:\\Projects\\Custom LRU Cache\\tests\\test_lru_cache.cpp\"",
+  "file": "D:/Projects/Custom LRU Cache/tests/test_lru_cache.cpp",
+  "output": "D:/Projects/Custom LRU Cache/build/CMakeFiles/lru_cache_test.dir/tests/test_lru_cache.cpp.obj"
+},
+{
+  "directory": "D:/Projects/Custom LRU Cache/build",
+  "command": "C:\\w64devkit\\bin\\ccache-g++.exe -I\"D:/Projects/Custom LRU Cache/build/_deps/googletest-src/googlemock/include\" -I\"D:/Projects/Custom LRU Cache/build/_deps/googletest-src/googlemock\" -isystem \"D:/Projects/Custom LRU Cache/build/_deps/googletest-src/googletest/include\" -isystem \"D:/Projects/Custom LRU Cache/build/_deps/googletest-src/googletest\" -g -std=c++17 -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o _deps\\googletest-build\\googlemock\\CMakeFiles\\gmock.dir\\src\\gmock-all.cc.obj -c \"D:\\Projects\\Custom LRU Cache\\build\\_deps\\googletest-src\\googlemock\\src\\gmock-all.cc\"",
+  "file": "D:/Projects/Custom LRU Cache/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "output": "D:/Projects/Custom LRU Cache/build/_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj"
+},
+{
+  "directory": "D:/Projects/Custom LRU Cache/build",
+  "command": "C:\\w64devkit\\bin\\ccache-g++.exe -isystem \"D:/Projects/Custom LRU Cache/build/_deps/googletest-src/googlemock/include\" -isystem \"D:/Projects/Custom LRU Cache/build/_deps/googletest-src/googlemock\" -isystem \"D:/Projects/Custom LRU Cache/build/_deps/googletest-src/googletest/include\" -isystem \"D:/Projects/Custom LRU Cache/build/_deps/googletest-src/googletest\" -g -std=c++17 -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o _deps\\googletest-build\\googlemock\\CMakeFiles\\gmock_main.dir\\src\\gmock_main.cc.obj -c \"D:\\Projects\\Custom LRU Cache\\build\\_deps\\googletest-src\\googlemock\\src\\gmock_main.cc\"",
+  "file": "D:/Projects/Custom LRU Cache/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "output": "D:/Projects/Custom LRU Cache/build/_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj"
+},
+{
+  "directory": "D:/Projects/Custom LRU Cache/build",
+  "command": "C:\\w64devkit\\bin\\ccache-g++.exe -I\"D:/Projects/Custom LRU Cache/build/_deps/googletest-src/googletest/include\" -I\"D:/Projects/Custom LRU Cache/build/_deps/googletest-src/googletest\" -g -std=c++17 -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o _deps\\googletest-build\\googletest\\CMakeFiles\\gtest.dir\\src\\gtest-all.cc.obj -c \"D:\\Projects\\Custom LRU Cache\\build\\_deps\\googletest-src\\googletest\\src\\gtest-all.cc\"",
+  "file": "D:/Projects/Custom LRU Cache/build/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "output": "D:/Projects/Custom LRU Cache/build/_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj"
+},
+{
+  "directory": "D:/Projects/Custom LRU Cache/build",
+  "command": "C:\\w64devkit\\bin\\ccache-g++.exe -isystem \"D:/Projects/Custom LRU Cache/build/_deps/googletest-src/googletest/include\" -isystem \"D:/Projects/Custom LRU Cache/build/_deps/googletest-src/googletest\" -g -std=c++17 -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o _deps\\googletest-build\\googletest\\CMakeFiles\\gtest_main.dir\\src\\gtest_main.cc.obj -c \"D:\\Projects\\Custom LRU Cache\\build\\_deps\\googletest-src\\googletest\\src\\gtest_main.cc\"",
+  "file": "D:/Projects/Custom LRU Cache/build/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "output": "D:/Projects/Custom LRU Cache/build/_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj"
+}
+]
