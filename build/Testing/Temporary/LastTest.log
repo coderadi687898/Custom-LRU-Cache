@@ -1,0 +1,138 @@
+Start testing: Jul 05 21:31 India Standard Time
+----------------------------------------------------------
+1/5 Testing: LRUCacheTest.BasicPutAndGet
+1/5 Test: LRUCacheTest.BasicPutAndGet
+Command: "D:/Projects/Custom LRU Cache/build/lru_cache_test.exe" "--gtest_filter=LRUCacheTest.BasicPutAndGet" "--gtest_also_run_disabled_tests"
+Directory: D:/Projects/Custom LRU Cache/build
+"LRUCacheTest.BasicPutAndGet" start time: Jul 05 21:31 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from D:/Projects/Custom LRU Cache/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = LRUCacheTest.BasicPutAndGet
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from LRUCacheTest
+[ RUN      ] LRUCacheTest.BasicPutAndGet
+[       OK ] LRUCacheTest.BasicPutAndGet (0 ms)
+[----------] 1 test from LRUCacheTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"LRUCacheTest.BasicPutAndGet" end time: Jul 05 21:31 India Standard Time
+"LRUCacheTest.BasicPutAndGet" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/5 Testing: LRUCacheTest.EvictionLogic
+2/5 Test: LRUCacheTest.EvictionLogic
+Command: "D:/Projects/Custom LRU Cache/build/lru_cache_test.exe" "--gtest_filter=LRUCacheTest.EvictionLogic" "--gtest_also_run_disabled_tests"
+Directory: D:/Projects/Custom LRU Cache/build
+"LRUCacheTest.EvictionLogic" start time: Jul 05 21:31 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from D:/Projects/Custom LRU Cache/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = LRUCacheTest.EvictionLogic
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from LRUCacheTest
+[ RUN      ] LRUCacheTest.EvictionLogic
+[       OK ] LRUCacheTest.EvictionLogic (0 ms)
+[----------] 1 test from LRUCacheTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"LRUCacheTest.EvictionLogic" end time: Jul 05 21:31 India Standard Time
+"LRUCacheTest.EvictionLogic" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/5 Testing: LRUCacheTest.LRUPromotionOnAccess
+3/5 Test: LRUCacheTest.LRUPromotionOnAccess
+Command: "D:/Projects/Custom LRU Cache/build/lru_cache_test.exe" "--gtest_filter=LRUCacheTest.LRUPromotionOnAccess" "--gtest_also_run_disabled_tests"
+Directory: D:/Projects/Custom LRU Cache/build
+"LRUCacheTest.LRUPromotionOnAccess" start time: Jul 05 21:31 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from D:/Projects/Custom LRU Cache/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = LRUCacheTest.LRUPromotionOnAccess
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from LRUCacheTest
+[ RUN      ] LRUCacheTest.LRUPromotionOnAccess
+[       OK ] LRUCacheTest.LRUPromotionOnAccess (0 ms)
+[----------] 1 test from LRUCacheTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"LRUCacheTest.LRUPromotionOnAccess" end time: Jul 05 21:31 India Standard Time
+"LRUCacheTest.LRUPromotionOnAccess" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/5 Testing: LRUCacheTest.UpdateExistingKey
+4/5 Test: LRUCacheTest.UpdateExistingKey
+Command: "D:/Projects/Custom LRU Cache/build/lru_cache_test.exe" "--gtest_filter=LRUCacheTest.UpdateExistingKey" "--gtest_also_run_disabled_tests"
+Directory: D:/Projects/Custom LRU Cache/build
+"LRUCacheTest.UpdateExistingKey" start time: Jul 05 21:31 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from D:/Projects/Custom LRU Cache/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = LRUCacheTest.UpdateExistingKey
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from LRUCacheTest
+[ RUN      ] LRUCacheTest.UpdateExistingKey
+[       OK ] LRUCacheTest.UpdateExistingKey (0 ms)
+[----------] 1 test from LRUCacheTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"LRUCacheTest.UpdateExistingKey" end time: Jul 05 21:31 India Standard Time
+"LRUCacheTest.UpdateExistingKey" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/5 Testing: LRUCacheTest.TTLExpiration
+5/5 Test: LRUCacheTest.TTLExpiration
+Command: "D:/Projects/Custom LRU Cache/build/lru_cache_test.exe" "--gtest_filter=LRUCacheTest.TTLExpiration" "--gtest_also_run_disabled_tests"
+Directory: D:/Projects/Custom LRU Cache/build
+"LRUCacheTest.TTLExpiration" start time: Jul 05 21:31 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from D:/Projects/Custom LRU Cache/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = LRUCacheTest.TTLExpiration
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from LRUCacheTest
+[ RUN      ] LRUCacheTest.TTLExpiration
+[       OK ] LRUCacheTest.TTLExpiration (159 ms)
+[----------] 1 test from LRUCacheTest (159 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (159 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.18 sec
+----------------------------------------------------------
+Test Passed.
+"LRUCacheTest.TTLExpiration" end time: Jul 05 21:31 India Standard Time
+"LRUCacheTest.TTLExpiration" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jul 05 21:31 India Standard Time

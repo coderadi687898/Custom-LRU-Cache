@@ -1,0 +1,37 @@
+{
+  "tests": 5,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "LRUCacheTest",
+      "tests": 5,
+      "testsuite": [
+        {
+          "name": "BasicPutAndGet",
+          "file": "D:\/Projects\/Custom LRU Cache\/tests\/test_lru_cache.cpp",
+          "line": 8
+        },
+        {
+          "name": "EvictionLogic",
+          "file": "D:\/Projects\/Custom LRU Cache\/tests\/test_lru_cache.cpp",
+          "line": 20
+        },
+        {
+          "name": "LRUPromotionOnAccess",
+          "file": "D:\/Projects\/Custom LRU Cache\/tests\/test_lru_cache.cpp",
+          "line": 33
+        },
+        {
+          "name": "UpdateExistingKey",
+          "file": "D:\/Projects\/Custom LRU Cache\/tests\/test_lru_cache.cpp",
+          "line": 50
+        },
+        {
+          "name": "TTLExpiration",
+          "file": "D:\/Projects\/Custom LRU Cache\/tests\/test_lru_cache.cpp",
+          "line": 62
+        }
+      ]
+    }
+  ]
+}

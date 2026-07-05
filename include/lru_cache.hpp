@@ -5,6 +5,7 @@
 #include <mutex>
 #include <optional>
 #include <stdexcept>
+#include <chrono> // Added for TTL
 
 namespace cache {
 
@@ -14,6 +15,8 @@ private:
     struct Node {
         Key key;
         Value value;
+        // Store the exact time this node was created/updated
+        std::chrono::steady_clock::time_point timestamp; 
         Node* prev;
         Node* next;
         
@@ -21,20 +24,17 @@ private:
     };
 
     size_t capacity;
+    std::chrono::milliseconds ttl; // Cache-wide TTL setting
     std::unordered_map<Key, Node*> cache_map;
     Node* head;
     Node* tail;
-    
-    // Mutable allows locking even in const methods (if we had any)
     mutable std::mutex mtx; 
 
-    // Remove a node from the linked list
     void removeNode(Node* node) {
         node->prev->next = node->next;
         node->next->prev = node->prev;
     }
 
-    // Insert a node right after the dummy head (mark as most recent)
     void insertToHead(Node* node) {
         node->next = head->next;
         node->prev = head;
@@ -43,18 +43,18 @@ private:
     }
 
 public:
-    explicit LRUCache(size_t cap) : capacity(cap) {
+    // Added an optional TTL parameter (default is 0 = no expiration)
+    explicit LRUCache(size_t cap, std::chrono::milliseconds ttl_duration = std::chrono::milliseconds::zero()) 
+        : capacity(cap), ttl(ttl_duration) {
         if (capacity == 0) {
             throw std::invalid_argument("Capacity must be greater than 0");
         }
-        // Initialize dummy nodes
         head = new Node(Key(), Value());
         tail = new Node(Key(), Value());
         head->next = tail;
         tail->prev = head;
     }
 
-    // Destructor to free allocated memory
     ~LRUCache() {
         Node* current = head;
         while (current != nullptr) {
@@ -64,40 +64,49 @@ public:
         }
     }
 
-    // Delete copy constructor and assignment operator to prevent double-free issues
     LRUCache(const LRUCache&) = delete;
     LRUCache& operator=(const LRUCache&) = delete;
 
-    // Retrieve a value by key
     std::optional<Value> get(const Key& key) {
         std::lock_guard<std::mutex> lock(mtx);
         
         if (cache_map.find(key) == cache_map.end()) {
-            return std::nullopt; // Key not found
+            return std::nullopt; 
         }
         
-        // Move the accessed node to the head (most recently used)
         Node* node = cache_map[key];
+
+        // --- TTL EXPIRATION CHECK ---
+        if (ttl > std::chrono::milliseconds::zero()) {
+            auto now = std::chrono::steady_clock::now();
+            if (now - node->timestamp > ttl) {
+                // Item has expired! Delete it.
+                removeNode(node);
+                cache_map.erase(key);
+                delete node;
+                return std::nullopt;
+            }
+        }
+        
+        // Item is still valid. Move to head.
         removeNode(node);
         insertToHead(node);
         
         return node->value;
     }
 
-    // Insert or update a key-value pair
     void put(const Key& key, const Value& value) {
         std::lock_guard<std::mutex> lock(mtx);
         
         if (cache_map.find(key) != cache_map.end()) {
-            // Key exists: update value and move to head
             Node* node = cache_map[key];
             node->value = value;
+            // Reset the expiration timer since it was just updated
+            node->timestamp = std::chrono::steady_clock::now(); 
             removeNode(node);
             insertToHead(node);
         } else {
-            // Key does not exist: create new node
             if (cache_map.size() >= capacity) {
-                // Cache full: remove the least recently used node (tail->prev)
                 Node* lru = tail->prev;
                 removeNode(lru);
                 cache_map.erase(lru->key);
@@ -105,6 +114,8 @@ public:
             }
             
             Node* newNode = new Node(key, value);
+            // Set the creation timer
+            newNode->timestamp = std::chrono::steady_clock::now();
             insertToHead(newNode);
             cache_map[key] = newNode;
         }

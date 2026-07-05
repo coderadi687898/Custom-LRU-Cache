@@ -1,4 +1,5 @@
 #include <gtest/gtest.h>
+#include <thread> // For std::this_thread::sleep_for
 #include "lru_cache.hpp"
 
 using namespace cache;
@@ -54,4 +55,21 @@ TEST(LRUCacheTest, UpdateExistingKey) {
     
     EXPECT_EQ(cache.get(1).value(), 150);
     EXPECT_EQ(cache.size(), 1); // Size should still be 1
+}
+
+
+// Testing TTL expiration logic
+TEST(LRUCacheTest, TTLExpiration) {
+    // Capacity of 2, TTL of 100 milliseconds
+    LRUCache<int, int> cache(2, std::chrono::milliseconds(100));
+    
+    cache.put(1, 100);
+    EXPECT_TRUE(cache.get(1).has_value()); // Should be valid instantly
+    
+    // Pause the thread for 150 milliseconds to force an expiration
+    std::this_thread::sleep_for(std::chrono::milliseconds(150));
+    
+    // Now the item should be gone, even though the cache isn't full
+    EXPECT_FALSE(cache.get(1).has_value());
+    EXPECT_EQ(cache.size(), 0);
 }
