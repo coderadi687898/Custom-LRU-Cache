@@ -1,5 +1,0 @@
-if(EXISTS "D:/Projects/Custom LRU Cache/build/lru_cache_test[1]_tests.cmake")
-  include("D:/Projects/Custom LRU Cache/build/lru_cache_test[1]_tests.cmake")
-else()
-  add_test(lru_cache_test_NOT_BUILT lru_cache_test_NOT_BUILT)
-endif()
