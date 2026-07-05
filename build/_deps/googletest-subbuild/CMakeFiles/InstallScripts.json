@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"D:/Projects/Custom LRU Cache/build/_deps/googletest-subbuild/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
